@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Radhika Modi | AI Engineer</title>
   <meta name="description"
-    content="Portfolio website for Radhika Modi - AI Engineer specializing in agentic AI systems, ML platforms, and production automation." />
+    content="Radhika Modi, AI engineer in Bangalore working on LLM fine-tuning, distributed GPU training, model evaluation, and inference." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -25,6 +25,7 @@
         <span class="role">AI Engineer</span>
       </a>
       <nav class="nav">
+        <a href="#fine-tuning">Fine-tuning</a>
         <a href="#skills">Skills</a>
         <a href="#impact">Impact</a>
         <a href="#industries">Industries</a>
@@ -39,15 +40,15 @@
       <div class="hero-grid">
         <figure class="portrait-card reveal">
           <img src="./assets/radhika-profile.jpeg" alt="Radhika Modi" class="hero-photo" />
-          <figcaption>Dubai, UAE • Open to global AI roles</figcaption>
+          <figcaption>Bangalore, India • Open to global AI roles</figcaption>
         </figure>
 
         <article class="hero-main reveal" style="--delay: 0.08s">
-          <p class="eyebrow">AI Engineer • Agentic Systems • Full-Stack Delivery</p>
-          <h1>Building intelligent systems that move from idea to production fast.</h1>
+          <p class="eyebrow">AI Engineer • LLM Post-Training • Inference Systems</p>
+          <h1>I fine-tune and deploy language models.</h1>
           <p class="lead">
-            I design agentic AI products, production-grade ML workflows, and resilient backend systems
-            that turn messy business problems into automated outcomes.
+            At Winpra, I work across the LLM lifecycle, from building training datasets and running
+            distributed fine-tuning to evaluating checkpoints and serving models in production.
           </p>
           <div class="actions">
             <a class="btn btn-primary" href="mailto:radhikamodi.05@gmail.com">Work With Me</a>
@@ -56,9 +57,41 @@
           </div>
           <ul class="stats" aria-label="quick highlights">
             <li><span>2nd</span> Engineer at Winpra AI</li>
-            <li><span>5+</span> Industries solved with data/AI</li>
-            <li><span>0→1</span> Platform builds in startup settings</li>
+            <li><span>12B–35B</span> Dense and mixture-of-experts models fine-tuned</li>
+            <li><span>Multi-GPU</span> Training on self-hosted RTX 5090s</li>
           </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="fine-tuning" class="container" aria-labelledby="fine-tuning-heading">
+      <div class="section-head reveal">
+        <p class="eyebrow">Selected work at Winpra AI</p>
+        <h2 id="fine-tuning-heading">LLM fine-tuning and post-training</h2>
+        <p class="lead">
+          I fine-tuned dense and mixture-of-experts models for structured reasoning, tool use,
+          and code and configuration generation. My work covered the training data, GPU runs,
+          regression evaluation, and deployment.
+        </p>
+      </div>
+      <div class="grid">
+        <article class="card reveal">
+          <h3>Training data and alignment</h3>
+          <p>Built synthetic instruction datasets, preference pairs, hard negatives, and reward signals.
+            Used supervised fine-tuning (SFT), direct preference optimization (DPO), and group relative
+            policy optimization (GRPO) for domain tasks.</p>
+        </article>
+        <article class="card reveal">
+          <h3>Multi-GPU training</h3>
+          <p>Used QLoRA and PyTorch FSDP2 to run 12B–35B models across self-hosted RTX 5090 GPUs.
+            Debugged memory pressure, distributed failures, and model-specific attention compatibility
+            when increasing context length.</p>
+        </article>
+        <article class="card reveal">
+          <h3>Evaluation and serving</h3>
+          <p>Combined task-specific evaluations with general regression tests to compare checkpoints
+            and adapters before release. Deployed models with vLLM and llama.cpp, using quantization
+            and dynamic LoRA loading to serve multiple specialized behaviors.</p>
         </article>
       </div>
     </section>
@@ -199,7 +232,7 @@
 
   <footer class="footer">
     <div class="container">
-      <p>Radhika Modi • Dubai, UAE</p>
+      <p>Radhika Modi • Bangalore, India</p>
     </div>
   </footer>
 
